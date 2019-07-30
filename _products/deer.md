@@ -1,14 +1,14 @@
 ---
-name: Sacha the Deer
+name: Bead Bracelets
 description_markdown: >-
-  Sacha's elegant antlers have never been seen on such a beautiful t-shirt. Wear
-  this majestic beast and feel all your problems float away.
+  Wren's elegant wrist bracelets have never been seen on such a beautiful band. Wear
+  this majestic jewelry and feel all your problems float away.
 
 
 
-  Slim Fit, 5oz 100% Cotton T-Shirt.
+  Young Adult, Adult.
 garment_type:
-price: '9.00'
+price: '3.00'
 sku: deer
 stock: 10
 sizes:
