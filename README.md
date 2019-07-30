@@ -1,4 +1,4 @@
-## Fur
+## Double Ewe
 
 E-commerce template for Jekyll. Browse through a [live demo](https://turquoise-rook.cloudvent.net).
 
@@ -26,7 +26,7 @@ Find more templates, themes and Jekyll tutorials at [CloudCannon Academy](https:
 
 ## Develop
 
-Fur was built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
+Built with [Jekyll](http://jekyllrb.com/) version 3.4.3, but should support newer versions as well.
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
