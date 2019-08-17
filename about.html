@@ -1,14 +1,17 @@
 ---
 title: Our Story
 hero: <div>Our Story <p><img align="middle" src="/images/doubleewe.png" width="200px" /></p></div>
-
 ---
 <p class="editor-link" style="text-align: center; position: relative;
-    top: -185px;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+	top: -185px;"><a href="cloudcannon:collections/_staff_members/" 
+	class="btn"><strong>&#9998;</strong> Manage Staff members</a>
+</p>
 <ul class="staff">
 	{% for person in site.staff_members %}
 		<li>
-			<div class="staff-image" style="background-image: url({% include relative-src.html src=person.image_path %})"></div>
+			<div class="staff-image" 
+				style="background-image: url({% include relative-src.html src=person.image_path %})">
+			</div>
 			<div class="name">{{ person.name }}</div>
 		</li>
 	{% endfor %}
@@ -16,15 +19,18 @@ hero: <div>Our Story <p><img align="middle" src="/images/doubleewe.png" width="2
 
 <div class="thirds story-points">
 	<div>
-		<h3 class="editable">Passion</h3>
-		<p class="editable">What more could you want from life than drawing animals and bringing happiness to others? We hope this passion show through in our work.</p>
+		<h3 class="editable">Creative Passion</h3>
+		<p class="editable">We are creatives. Our interests are varied. We enjoy working on new projects with different materials.
+			We hope our passion for quality shows through in our work.</p>
 	</div>
 	<div>
-		<h3 class="editable">Animal</h3>
-		<p class="editable">It's easy to forget that we're all part of the animal kingdom. Fur is a brand that helps you get in touch with your inner animal.</p>
+		<h3 class="editable">Sharp Buttons</h3>
+		<p class="editable">We enjoy snark and hope you do, too.
+			Get in touch with your sarcasm. It feels good... and it funny, too.</p>
 	</div>
 	<div>
-		<h3 class="editable">Style</h3>
-		<p class="editable">We like to keep things plain and simple around here to help the animals speak for themselves.</p>
+		<h3 class="editable">Wearable Style</h3>
+		<p class="editable">We like to keep designs fresh, which often means keeping things plain and simple.
+		</p>
 	</div>
 </div>
