@@ -15,8 +15,8 @@ sizes:
 styles:
   - name: Green
     color: '#00FF00'
-    image: /images/products/button/green.gif
+    image: /images/products/classic-smiley/green.gif
   - name: Red
     color: '#FF0000'
-    image: /images/products/button/red.gif
+    image: /images/products/classic-smiley/red.gif
 ---
