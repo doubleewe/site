@@ -7,14 +7,19 @@ hero: <div>Our Story <p><img align="middle" src="/images/doubleewe.png" width="2
 	class="btn"><strong>&#9998;</strong> Manage Staff members</a>
 </p>
 <ul class="staff">
+	
 	{% for person in site.staff_members %}
 		<li>
 			<div class="staff-image" 
 				style="background-image: url({% include relative-src.html src=person.image_path %})">
 			</div>
-			<div class="name">{{ person.name }}</div>
+			<div class="name">
+					{% if person.name != "Jill" %}<span class="w">W</span>{% endif %}
+				{{ person.name }}</div>
+			<div class="nickname">"{{ person.nickname }}"</div>
 		</li>
 	{% endfor %}
+	
 </ul>
 
 <div class="thirds story-points">
