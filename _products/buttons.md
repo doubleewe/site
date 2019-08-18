@@ -13,10 +13,10 @@ sizes:
   - Medium
   - Large
 styles:
-  - name: Yellow
-    color: '#FFFF00'
-    image: /images/products/button/yellow.jpg
   - name: Green
-    color: '#67aa79'
-    image: /images/products/button/green.jpg
+    color: '#00FF00'
+    image: /images/products/button/green.gif
+  - name: Red
+    color: '#FF0000'
+    image: /images/products/button/red.gif
 ---
