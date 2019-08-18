@@ -1,6 +1,6 @@
 ---
 title: Our Story
-hero: <div>Our Story <p><img align="middle" src="/images/doubleewe.png" width="200px" /></p></div>
+hero: <div>Our Story <p><img align="middle" src="/images/doubleewe-trans.png" width="200px" /></p></div>
 ---
 <p class="editor-link" style="text-align: center; position: relative;
 	top: -185px;"><a href="cloudcannon:collections/_staff_members/" 
@@ -14,8 +14,11 @@ hero: <div>Our Story <p><img align="middle" src="/images/doubleewe.png" width="2
 				style="background-image: url({% include relative-src.html src=person.image_path %})">
 			</div>
 			<div class="name">
-					{% if person.name != "Jill" %}<span class="w">W</span>{% endif %}
-				{{ person.name }}</div>
+					{% if person.name != "Jill" %}
+					<span class="first-initial">W</span>
+					{% endif %}
+					<span class="first-name">{{ person.name }}</span>
+			</div>
 			<div class="nickname">"{{ person.nickname }}"</div>
 		</li>
 	{% endfor %}
