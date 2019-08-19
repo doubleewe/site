@@ -2,8 +2,7 @@
 name: Arrow Button
 description_markdown: >-
   A half smiley face.
-
-  Two colors.
+  Two colors for you to choose from.
 garment_type:
 price: '3.00'
 sku: button
