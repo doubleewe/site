@@ -21,16 +21,19 @@ function showBlurb(name) {
 	
 	{% for person in site.about %}
 		<li>
-			<a onclick="showBlurb('{{ person.nickname }}')"><div class="staff-image" 
+			<a style="visited:red; cursor: pointer;text-decoration: none;" onclick="showBlurb('{{ person.nickname }}')">
+
+			<div class="staff-image" 
 				style="background-image: url({% include relative-src.html src=person.image_path %})">
-			</div></a>
+			</div>
 			<div class="name">
 				<span class="first-name" ::first-letter>{{ person.name }}</span>
 			</div>
 			
 				<div class="nickname">"{{ person.nickname }}"</div>
-			<p name="blurb" id="{{ person.nickname }}">{{ person.blurb }}</p>
+			<p class="blurb" name="blurb" id="{{ person.nickname }}">{{ person.blurb }}</p>
 		</li>
+		</a>
 	{% endfor %}
 	
 </ul>
