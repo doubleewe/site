@@ -3,23 +3,33 @@ title: Our Story
 hero: <div>Our Story <p><img align="middle" src="/images/doubleewe-trans.png" width="200px" /></p></div>
 ---
 <p class="editor-link" style="text-align: center; position: relative;
-	top: -185px;"><a href="cloudcannon:collections/_staff_members/" 
+	top: -185px;"><a href="cloudcannon:collections/_about/" 
 	class="btn"><strong>&#9998;</strong> Manage Staff members</a>
 </p>
+<script>
+	
+function showBlurb(name) {
+	var blurbs = document.getElementsByName("blurb");
+	var i;
+	for (i = 0; i < blurbs.length; i++) {
+ 		blurbs[i].style.display = 'none';
+  	}
+	document.getElementById(name).style.display = 'block';
+}
+</script>
 <ul class="staff">
 	
-	{% for person in site.staff_members %}
+	{% for person in site.about %}
 		<li>
-			<div class="staff-image" 
+			<a onclick="showBlurb('{{ person.nickname }}')"><div class="staff-image" 
 				style="background-image: url({% include relative-src.html src=person.image_path %})">
-			</div>
+			</div></a>
 			<div class="name">
-					{% if person.name != "Jill" %}
-					<span class="first-initial">W</span>
-					{% endif %}
-					<span class="first-name">{{ person.name }}</span>
+				<span class="first-name" ::first-letter>{{ person.name }}</span>
 			</div>
-			<div class="nickname">"{{ person.nickname }}"</div>
+			
+				<div class="nickname">"{{ person.nickname }}"</div>
+			<p name="blurb" id="{{ person.nickname }}">{{ person.blurb }}</p>
 		</li>
 	{% endfor %}
 	
