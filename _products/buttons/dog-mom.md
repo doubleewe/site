@@ -4,7 +4,8 @@ description_markdown: >-
    Do you love your dog? Here's a button for the dog lover in your family.
 garment_type: top
 price: "1.50" 
-sku:
+sku: dog-mom-button
+stock: 10
 styles:
   - name: 'white' 
     color: "#FFFFFF"
