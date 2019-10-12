@@ -7,10 +7,6 @@ garment_type:
 price: '3.00'
 sku: button
 stock: 10
-sizes:
-  - Small
-  - Medium
-  - Large
 styles:
   - name: Blue
     color: '#0000FF'
