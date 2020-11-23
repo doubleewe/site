@@ -13,11 +13,11 @@
 }
 
 header {
-	color: #fff;
+	color: black;
 	padding: 20px 0 59px 0;
 	background: linear-gradient(135deg, $brand-color 0%, $brand-color-2 100%);
 	position: relative;
-
+	font-size: 1.5em;
 	p {
 		margin: 0;
 	}
@@ -50,7 +50,7 @@ header {
 	}
 
 	a {
-		color: #fff;
+		color: #000;
 		text-decoration: none;
 		z-index: 1;
 		position: relative;
@@ -76,7 +76,7 @@ nav {
 		margin: 0 3px;
 		padding: 20px 10px;
 		border-bottom: 1px solid rgba(255,255,255,0);
-		color: rgba(255,255,255,.6);
+		color: rgba(0,0,0,.6);
 		transition: 200ms ease-in color;
 		display: none;
 
